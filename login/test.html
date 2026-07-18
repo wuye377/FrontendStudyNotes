@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>登录验证界面</title>
+        <link rel="stylesheet" href="css/test.css">
+        <script src="js/test.js"></script>
+  
+    </head>
+
+    <body>
+        <div class="header">
+        <form id="loginForm">
+        <h1>登录界面</h1>
+        <div class="formStyle">
+            <span class="label">用户名：</span>
+            <input id="userName" type="text" name="user" placeholder="请输入用户名">
+        </div>
+        <div class="formStyle">
+            <span class="label">密码：</span>
+            <input id="passWord" type="password" name="pwd" placeholder="请输入密码">
+        </div>
+        <button id="btn" type="submit">登录</button>
+        <p id="tip"></p>
+        </form>
+        
+        </div>
+ 
+        <!-- <script>
+            const oUser=document.getElementById("userName");
+            const oPa=document.getElementById("passWord");
+            const oBtn=document.getElementById("loginForm");
+            const oTip=document.getElementById("tip");
+            function verification(){
+                oTip.textContent = "";
+                const userValue=oUser.value.trim();
+                if(userValue===""){
+                    oTip.textContent="输入用户名不能为空";
+                    oTip.style.color="red";
+                    return false;
+                }
+                const passW=oPa.value.trim();
+                if(passW.length=0){
+                    oTip.textContent="输入密码不能为空";
+                    oTip.style.color="red";
+                    return false;
+                }
+                if(passW.length<6){
+                    oTip.textContent="密码长度不能小于6位数";
+                    oTip.style.color="red";
+                    return false;
+                }
+                oTip.textContent="登录成功"
+                oTip.style.color="green";
+                return true;
+            }
+            oBtn.addEventListener("submit",function(e){
+                e.preventDefault();
+                const isPass=verification();
+                console.log('校验结果',isPass);
+            });
+        </script> -->
+
+    </body>
+</html>
